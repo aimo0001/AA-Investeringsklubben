@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015bd51a-3edc-4b8f-9e0a-3ec42f0c5fab" name="Changes" comment="model classes + lidt service">
+    <list default="true" id="015bd51a-3edc-4b8f-9e0a-3ec42f0c5fab" name="Changes" comment="videre på service.">
+      <change afterPath="$PROJECT_DIR$/src/controllers/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/AdminUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/StockMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/StockMarketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TransactionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/LoginUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LoginUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UserUI.java" afterDir="false" />
     </list>
     <list id="a05bbf0d-fe3c-4c0c-9e4d-f9906c380815" name="Changes by Asli" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,21 +35,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "aimo0001"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;aimo0001&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/aimo0001/Gruppe-Y-Investeringsklubben.git",
-    "accountId": "da5527e7-8b9b-4a35-b837-7a8a0c14332b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/aimo0001/Gruppe-Y-Investeringsklubben.git&quot;,
+    &quot;accountId&quot;: &quot;da5527e7-8b9b-4a35-b837-7a8a0c14332b&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2wgkUszNgtfxKrvjCyeEoIdCENY" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,23 +58,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Bruger/IdeaProjects",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruger/IdeaProjects&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Bruger\IdeaProjects\Gruppe-Y-Investeringsklubben\src\repositories" />
@@ -85,7 +96,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746470623007</updated>
-      <workItem from="1746470624107" duration="12598000" />
+      <workItem from="1746470624107" duration="13034000" />
+      <workItem from="1746632539895" duration="6000" />
+      <workItem from="1746632567871" duration="3000" />
+      <workItem from="1747224339740" duration="5077000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -127,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746631753384</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="videre på service.">
+      <option name="closed" value="true" />
+      <created>1746632202614</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746632202614</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +170,7 @@
     <MESSAGE value="." />
     <MESSAGE value="model classes." />
     <MESSAGE value="model classes + lidt service" />
-    <option name="LAST_COMMIT_MESSAGE" value="model classes + lidt service" />
+    <MESSAGE value="videre på service." />
+    <option name="LAST_COMMIT_MESSAGE" value="videre på service." />
   </component>
 </project>

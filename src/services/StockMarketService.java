@@ -6,6 +6,9 @@ import repositories.StockMarketRepository;
 import java.util.List;
 
 public class StockMarketService {
+    /*
+    Skal give liste over aktier og finde aktiepriser.
+     */
     private StockMarketRepository stockMarketRepository;
     private List<StockMarket> stockMarkets;
 
