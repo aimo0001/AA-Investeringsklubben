@@ -9,16 +9,18 @@ public class StockMarketService {
     /*
     Skal give liste over aktier og finde aktiepriser.
      */
+
     private StockMarketRepository stockMarketRepository;
     private List<StockMarket> stockMarkets;
 
     public StockMarketService(StockMarketRepository stockMarketRepository){
         this.stockMarketRepository = stockMarketRepository;
-        stockMarkets = stockMarketRepository.getStockMarket();
+        stockMarkets = stockMarketRepository.readFile();
     }
 
-    public StockMarketRepository getStockMarketRepository() {
-        return stockMarketRepository;
+
+    public List<StockMarket> getAllStockMarkets(){
+        return stockMarkets;
     }
 
 }

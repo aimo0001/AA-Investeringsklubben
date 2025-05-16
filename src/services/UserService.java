@@ -12,12 +12,15 @@ public class UserService {
      */
     private List<User> users;
     private UserRepository userRepo;
+    /*
 
     public UserService(UserRepository) {
         this.userRepo = userRepo;
         userRepo.readFile();
         users = userRepo.getUsers();
     }
+
+     */
 
 
 }
