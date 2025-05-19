@@ -23,4 +23,11 @@ public class StockMarketService {
         return stockMarkets;
     }
 
+    public StockMarketRepository getStockMarketRepository() {
+        return stockMarketRepository;
+    }
+
+    public List<StockMarket> getStockMarket() {
+        return stockMarkets;
+    }
 }

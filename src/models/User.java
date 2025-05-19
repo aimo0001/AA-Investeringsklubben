@@ -1,6 +1,7 @@
 package models;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class User {
     private int userID;
@@ -11,14 +12,14 @@ public class User {
     private LocalDate createdAt;
     private LocalDate updatedAt;
 
-    public User(int userID, String fullName, String email, String birthDate, double balance, LocalDate createdAt, LocalDate updatedAt) {
+    public User(int userID, String fullName, String email, LocalDate birthDate, double balance, LocalDate createdAt, LocalDate updatedAt) {
         this.userID = userID;
         this.fullName = fullName;
         this.email = email;
-        this.birthDate=LocalDate.parse(birthDate);
+        this.birthDate=birthDate;
         this.balance = balance;
-        this.createdAt = LocalDate.parse(createdAt.toString());
-        this.updatedAt = LocalDate.parse(updatedAt.toString());
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
     }
 
 
