@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015bd51a-3edc-4b8f-9e0a-3ec42f0c5fab" name="Changes" comment="mere struktur.">
+    <list default="true" id="015bd51a-3edc-4b8f-9e0a-3ec42f0c5fab" name="Changes" comment="model classes + lidt service">
+      <change afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/StockMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/StockMarket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/StockMarketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/StockMarketRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repositories/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/TransactionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/stockMarket.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/stockMarket.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/transactions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/transactions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/StockMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/StockMarketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TransactionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/AdminUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AdminUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/LoginUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LoginUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UserUI.java" afterDir="false" />
     </list>
     <list id="a05bbf0d-fe3c-4c0c-9e4d-f9906c380815" name="Changes by Asli" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +38,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -40,12 +46,15 @@
     &quot;assignee&quot;: &quot;aimo0001&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/aimo0001/Gruppe-Y-Investeringsklubben.git&quot;,
-    &quot;accountId&quot;: &quot;da5527e7-8b9b-4a35-b837-7a8a0c14332b&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/aimo0001/Gruppe-Y-Investeringsklubben.git",
+    "accountId": "93407cff-a3cf-4e8a-ba0f-761779906c79"
   }
-}</component>
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -60,11 +69,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.main.executor": "Run",
+    "Application.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "læse-stockmarket",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Bruger/IdeaProjects",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -84,11 +94,12 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
       </set>
     </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="015bd51a-3edc-4b8f-9e0a-3ec42f0c5fab" name="Changes" comment="" />
@@ -96,10 +107,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746470623007</updated>
-      <workItem from="1746470624107" duration="13034000" />
-      <workItem from="1746632539895" duration="6000" />
-      <workItem from="1746632567871" duration="3000" />
-      <workItem from="1747224339740" duration="9328000" />
+      <workItem from="1746470624107" duration="12598000" />
+      <workItem from="1747691940027" duration="1289000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -141,23 +150,7 @@
       <option name="project" value="LOCAL" />
       <updated>1746631753384</updated>
     </task>
-    <task id="LOCAL-00006" summary="videre på service.">
-      <option name="closed" value="true" />
-      <created>1746632202614</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1746632202614</updated>
-    </task>
-    <task id="LOCAL-00007" summary="mere struktur.">
-      <option name="closed" value="true" />
-      <created>1747403234112</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1747403234112</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,8 +171,17 @@
     <MESSAGE value="." />
     <MESSAGE value="model classes." />
     <MESSAGE value="model classes + lidt service" />
-    <MESSAGE value="videre på service." />
-    <MESSAGE value="mere struktur." />
-    <option name="LAST_COMMIT_MESSAGE" value="mere struktur." />
+    <option name="LAST_COMMIT_MESSAGE" value="model classes + lidt service" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/models/Transaction.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
