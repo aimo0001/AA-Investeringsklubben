@@ -26,15 +26,6 @@ public class AdminUI {
             System.out.print("Vælg: ");
             valg = scanner.nextLine();
 
-            switch (valg) {
-                case "1" -> adminController.showUserRankings();
-                case "2" -> adminController.showTotalPortfolioOverview();
-                case "3" -> adminController.showSectorDistribution();
-                case "4" -> adminController.showStockDistribution();
-                case "0" -> System.out.println("Logger ud...");
-                default -> System.out.println("Ugyldigt valg, prøv igen.");
-            }
-
         } while (!valg.equals("0"));
     }
 }

@@ -4,24 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015bd51a-3edc-4b8f-9e0a-3ec42f0c5fab" name="Changes" comment="model classes + lidt service">
-      <change afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
+    <list default="true" id="015bd51a-3edc-4b8f-9e0a-3ec42f0c5fab" name="Changes" comment="Controllers, ui og services">
+      <change afterPath="$PROJECT_DIR$/src/ui/AdminSwingUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/LoginSwing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/UserSwingUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/StockMarketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/StockMarketRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/TransactionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/stockMarket.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/stockMarket.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repositories/transactions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/transactions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/StockMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/StockMarketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/AdminUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AdminUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/LoginUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LoginUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/UserUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UserUI.java" afterDir="false" />
     </list>
     <list id="a05bbf0d-fe3c-4c0c-9e4d-f9906c380815" name="Changes by Asli" comment="" />
@@ -69,6 +62,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.LoginSwing.executor": "Run",
     "Application.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -108,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746470623007</updated>
       <workItem from="1746470624107" duration="12598000" />
-      <workItem from="1747691940027" duration="1289000" />
+      <workItem from="1747691940027" duration="10125000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -150,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746631753384</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Controllers, ui og services">
+      <option name="closed" value="true" />
+      <created>1747693268206</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747693268206</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +173,8 @@
     <MESSAGE value="." />
     <MESSAGE value="model classes." />
     <MESSAGE value="model classes + lidt service" />
-    <option name="LAST_COMMIT_MESSAGE" value="model classes + lidt service" />
+    <MESSAGE value="Controllers, ui og services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Controllers, ui og services" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

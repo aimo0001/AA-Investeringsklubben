@@ -50,43 +50,72 @@ public class TransactionService {
         return total;
     }
 
-    public void showPortfolioForUser(int userId) {
+    public String getPortfolioForUser(int userId) {
+        StringBuilder sb = new StringBuilder();
         Map<String, Integer> holdings = new HashMap<>();
 
         for (Transaction t : transactions) {
             if (t.getUserId() == userId) {
-                holdings.putIfAbsent(t.getTicker(), 0);
-                int current = holdings.get(t.getTicker());
                 int change = t.getOrderType().equalsIgnoreCase("BUY") ? t.getQuantity() : -t.getQuantity();
-                holdings.put(t.getTicker(), current + change);
+                holdings.put(t.getTicker(), holdings.getOrDefault(t.getTicker(), 0) + change);
             }
         }
 
-        System.out.println("Din portefølje:");
         for (Map.Entry<String, Integer> entry : holdings.entrySet()) {
             if (entry.getValue() > 0) {
                 StockMarket stock = stockMarketService.getStockByTicker(entry.getKey());
                 double price = stock != null ? stock.getPrice() : 0;
                 double value = entry.getValue() * price;
-                System.out.printf("- %s: %d stk. (%.2f DKK)%n", entry.getKey(), entry.getValue(), value);
+                sb.append(String.format("- %s: %d stk. (%.2f DKK)%n", entry.getKey(), entry.getValue(), value));
             }
         }
+
+        return sb.toString();
     }
 
-    public void showTransactionsForUser(int userId) {
+    public String getTransactionsForUser(int userId) {
+        StringBuilder sb = new StringBuilder();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
-        System.out.println("Transaktionshistorik:");
         for (Transaction t : transactions) {
             if (t.getUserId() == userId) {
-                System.out.printf("%s | %s | %s | %d stk. | %.2f DKK%n",
+                sb.append(String.format("%s | %s | %s | %d stk. | %.2f DKK%n",
                         t.getDate().format(formatter),
                         t.getOrderType(),
                         t.getTicker(),
                         t.getQuantity(),
-                        t.getPrice());
+                        t.getPrice()));
             }
         }
+
+        return sb.toString();
+    }
+
+    public String handleBuy(User user, String ticker, int quantity) {
+        StockMarket stock = stockMarketService.getStockByTicker(ticker);
+        if (stock == null) return "Aktie ikke fundet.";
+
+        double totalPrice = quantity * stock.getPrice();
+        if (user.getBalance() < totalPrice) {
+            return "Ikke nok penge. Du mangler " + String.format("%.2f DKK", (totalPrice - user.getBalance()));
+        }
+
+        user.setBalance(user.getBalance() - totalPrice);
+        recordTransaction(user, "BUY", ticker, quantity, stock.getPrice());
+        return String.format("Købte %d stk. af %s til %.2f DKK", quantity, ticker, totalPrice);
+    }
+
+    public String handleSell(User user, String ticker, int quantity) {
+        int owned = getOwnedQuantity(user.getUserID(), ticker);
+        if (owned < quantity) {
+            return "Du ejer kun " + owned + " stk. af " + ticker;
+        }
+
+        StockMarket stock = stockMarketService.getStockByTicker(ticker);
+        double total = quantity * stock.getPrice();
+        user.setBalance(user.getBalance() + total);
+        recordTransaction(user, "SELL", ticker, quantity, stock.getPrice());
+        return String.format("Solgte %d stk. af %s for %.2f DKK", quantity, ticker, total);
     }
 
     public List<Transaction> getAllTransactions() {

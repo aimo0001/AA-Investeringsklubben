@@ -1,10 +1,9 @@
 package app;
 
-import ui.LoginUI;
+import ui.LoginSwing;
 
 public class Main {
     public static void main(String[] args) {
-        LoginUI loginUI = new LoginUI();
-        loginUI.show();
+        LoginSwing.main(args);
     }
 }

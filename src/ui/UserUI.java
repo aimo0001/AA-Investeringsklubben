@@ -30,8 +30,8 @@ public class UserUI {
             switch (valg) {
                 case "1" -> køb(scanner);
                 case "2" -> sælg(scanner);
-                case "3" -> userController.viewPortfolio();
-                case "4" -> userController.viewTransactionHistory();
+                case "3" -> System.out.println(userController.getPortfolioText());
+                case "4" -> System.out.println(userController.getTransactionHistoryText());
                 case "0" -> System.out.println("Logger ud...");
                 default -> System.out.println("Ugyldigt valg.");
             }
@@ -44,7 +44,8 @@ public class UserUI {
         String ticker = scanner.nextLine();
         System.out.print("Antal du vil købe: ");
         int antal = Integer.parseInt(scanner.nextLine());
-        userController.buyStock(ticker, antal);
+        String resultat = userController.buyStock(ticker, antal);
+        System.out.println(resultat);
     }
 
     private void sælg(Scanner scanner) {
@@ -52,6 +53,7 @@ public class UserUI {
         String ticker = scanner.nextLine();
         System.out.print("Antal du vil sælge: ");
         int antal = Integer.parseInt(scanner.nextLine());
-        userController.sellStock(ticker, antal);
+        String resultat = userController.sellStock(ticker, antal);
+        System.out.println(resultat);
     }
 }
