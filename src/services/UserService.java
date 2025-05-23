@@ -4,6 +4,7 @@ import models.User;
 import repositories.UserRepository;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class UserService {
@@ -23,11 +24,19 @@ public class UserService {
     }
 
     public User opretBruger(String navn, String email, String fødselsdato) {
-        int id = findFriId();
-        User ny = new User(id, navn, email, fødselsdato, 100000.00, LocalDate.now(), LocalDate.now());
-        users.add(ny);
-        saveAllUsers();
-        return ny;
+        try {
+            int id = findFriId();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+            LocalDate birthDate = LocalDate.parse(fødselsdato, formatter);
+
+            User ny = new User(id, navn, email, birthDate, 100000.00, LocalDate.now(), LocalDate.now());
+            users.add(ny);
+            saveAllUsers();
+            return ny;
+        } catch (Exception e) {
+            System.out.println("Fejl ved oprettelse af bruger: " + e.getMessage());
+            return null;
+        }
     }
 
     private int findFriId() {

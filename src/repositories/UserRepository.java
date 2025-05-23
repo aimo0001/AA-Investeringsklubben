@@ -38,7 +38,7 @@ public class UserRepository {
                     LocalDate createdAt = LocalDate.parse(parts[5].trim(), formatter);
                     LocalDate updatedAt = LocalDate.parse(parts[6].trim(), formatter);
 
-                    User user = new User(userID, fullName, email, birthDate.toString(), balance, createdAt, updatedAt);
+                    User user = new User(userID, fullName, email, birthDate, balance, createdAt, updatedAt);
                     users.add(user);
                 }
             }
@@ -57,14 +57,14 @@ public class UserRepository {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
         try (FileWriter writer = new FileWriter(FILE_PATH, false)) {
-            writer.write("user_id;fullName;email;birthDate;balance;createdAt;updatedAt\n");
+            writer.write("user_id;full_name;email;birth_date;initial_cash_DKK;created_at;last_updated\n");
 
             for (User u : users) {
                 String line = String.format("%d;%s;%s;%s;%.2f;%s;%s",
                         u.getUserID(),
                         u.getFullName(),
                         u.getEmail(),
-                        u.getBirthDate(),
+                        u.getBirthDate().format(formatter),
                         u.getBalance(),
                         u.getCreatedAt().format(formatter),
                         u.getUpdatedAt().format(formatter)
