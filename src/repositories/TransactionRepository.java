@@ -47,7 +47,6 @@ public class TransactionRepository {
         return transactions;
     }
 
-    // Gem ny transaktion
     public static void saveTransaction(Transaction transaction) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
