@@ -61,6 +61,10 @@ public class UserController {
         transactionService.showTransactionsForUser(user.getUserID());
     }
 
+    public void displayStockMarket() {
+        stockMarketService.printAllStockMarkets();
+    }
+
     public User getUser() {
         return user;
     }

@@ -21,8 +21,9 @@ public class UserUI {
             System.out.println("\n📊 Bruger-menu:");
             System.out.println("1. Køb aktier");
             System.out.println("2. Sælg aktier");
-            System.out.println("3. Vis portefølje");
-            System.out.println("4. Vis transaktionshistorik");
+            System.out.println("3. Se aktiemarkedet");
+            System.out.println("4. Vis portefølje");
+            System.out.println("5. Vis transaktionshistorik");
             System.out.println("0. Log ud");
             System.out.print("Vælg: ");
             valg = scanner.nextLine();
@@ -30,8 +31,9 @@ public class UserUI {
             switch (valg) {
                 case "1" -> køb(scanner);
                 case "2" -> sælg(scanner);
-                case "3" -> userController.viewPortfolio();
-                case "4" -> userController.viewTransactionHistory();
+                case "3" -> userController.displayStockMarket();
+                case "4" -> userController.viewPortfolio();
+                case "5" -> userController.viewTransactionHistory();
                 case "0" -> System.out.println("Logger ud...");
                 default -> System.out.println("Ugyldigt valg.");
             }
@@ -54,4 +56,6 @@ public class UserUI {
         int antal = Integer.parseInt(scanner.nextLine());
         userController.sellStock(ticker, antal);
     }
+
+
 }

@@ -60,4 +60,13 @@ public class StockMarketService {
 
         return distribution;
     }
+
+    public void printAllStockMarkets() {
+        for (StockMarket stock : stockMarkets) {
+            System.out.printf("%s - %s | %.2f DKK | Sector: %s%n",
+                    stock.getTicker(), stock.getName(), stock.getPrice(), stock.getSector());
+        }
+
+        }
 }
+
