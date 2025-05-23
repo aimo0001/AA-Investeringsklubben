@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="015bd51a-3edc-4b8f-9e0a-3ec42f0c5fab" name="Changes" comment="model classes + lidt service">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdminServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Gruppe-Y-Investeringsklubben.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gruppe-Y-Investeringsklubben.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.java" afterDir="false" />
+    <list default="true" id="015bd51a-3edc-4b8f-9e0a-3ec42f0c5fab" name="Changes" comment="unit test 1">
+      <change beforePath="$PROJECT_DIR$/src/AdminServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminServiceTest.java" afterDir="false" />
     </list>
     <list id="a05bbf0d-fe3c-4c0c-9e4d-f9906c380815" name="Changes by Asli" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746631753384</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="unit test 1">
+      <option name="closed" value="true" />
+      <created>1748009106990</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748009106990</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +177,8 @@
     <MESSAGE value="." />
     <MESSAGE value="model classes." />
     <MESSAGE value="model classes + lidt service" />
-    <option name="LAST_COMMIT_MESSAGE" value="model classes + lidt service" />
+    <MESSAGE value="unit test 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="unit test 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
